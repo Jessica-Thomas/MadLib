@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/MadLib/MadLib.csproj",
+      "projectUniqueName": "/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/MadLib.csproj",
       "projectName": "MadLib",
-      "projectPath": "/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/MadLib/MadLib.csproj",
+      "projectPath": "/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/MadLib.csproj",
       "packagesPath": "/Users/jessicathomas/.nuget/packages/",
-      "outputPath": "/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/MadLib/obj/",
+      "outputPath": "/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jessicathomas/.config/NuGet/NuGet.Config"
