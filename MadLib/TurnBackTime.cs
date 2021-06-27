@@ -6,33 +6,32 @@ namespace MadLib
         public TurnBackTime()
         {
             Console.WriteLine("Please give me a verb:  ");
-            string Verb = Console.ReadLine();
+            string verb = Console.ReadLine();
 
             Console.WriteLine("Please give me a plural noun:  ");
             string pluralNoun = Console.ReadLine();
 
             Console.WriteLine("Please give me a noun:  ");
-            string Noun = Console.ReadLine();
+            string noun = Console.ReadLine();
 
             Console.WriteLine("Please give me a verb:  ");
-            string Verb2 = Console.ReadLine();
+            string verb2 = Console.ReadLine();
 
             Console.WriteLine("Please give me a verb:  ");
-            string Verb3 = Console.ReadLine();
+            string verb3 = Console.ReadLine();
 
             Console.WriteLine("Please give me a plural noun:  ");
             string pluralNoun2 = Console.ReadLine();
 
 
-
-            string timeMadLib = "If I could " + Verb + " back time \n" +
+            string timeMadLib = "If I could " + verb + " back time \n" +
                                               "If I could find a way \n" +
                                               "I'd take back those " + pluralNoun + " that've hurt you and you'd stay \n" +
                                               "I don't know why I did the things I did \n" +
                                               "I don't know why I said the things I said \n" +
                                               "Pride's like a knife, it can cut deep inside \n" +
-                                              Noun + " are like weapons, they " + Verb2 + " sometimes \n" +
-                                              "I didn't really mean to " + Verb3 + " you \n" +
+                                              noun + " are like weapons, they " + verb2 + " sometimes \n" +
+                                              "I didn't really mean to " + verb3 + " you \n" +
                                               "I didn't wanna see you go \n" +
                                               "I know I made you cry, but baby \n" +
                                               "If I could turn back time, if I could find a way \n" +
@@ -44,7 +43,8 @@ namespace MadLib
 
             Console.WriteLine(timeMadLib);
 
-            string turnBackTime = "If I could turn back time \n" +
+            string turnBackTime = "Here are the real lyrics--If I Could Turn Back Time by Cher: \n" +
+                                                  "If I could turn back time \n" +
                                                   "If I could find a way \n" +
                                                   "I'd take back those words that've hurt you and you'd stay \n" +
                                                   "I don't know why I did the things I did \n" +
