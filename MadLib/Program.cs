@@ -6,30 +6,34 @@ namespace MadLib
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to my mad lib!");
-
-            Console.WriteLine("Pick an option. 1, 2, or 3? ");
-            var Selection = Console.ReadLine();
-            int madLib = int.Parse(Selection);
-
-
-            while (true)
             {
-                if (madLib == 1)
-                {
-                    MadLibMFOY madLibMFOY = new MadLibMFOY();
-                }
+                string Selection;
+                string Quit = "To exit the program, press Q.";
+                string Choices = "To proceed with a mad lib, make a selection... 1, 2, or 3 ? ";
 
-                else if (madLib == 2)
+                do
                 {
-                    Regulate regulate = new Regulate();
-                }
+                    Console.WriteLine(Quit);
+                    Console.WriteLine(Choices);
+                    Selection = Console.ReadLine().ToLower();
 
-                else if (madLib == 3)
-                {
-                    TurnBackTime turnBackTime = new TurnBackTime();
+                    if (Selection == "1")
+                    {
+                        MadLibMFOY madLibMFOY = new MadLibMFOY();
+                    }
+                     else if (Selection == "2")
+                    {
+                        Regulate regulate = new Regulate();
+                    }
+                    else if (Selection == "3")
+                    {
+                        TurnBackTime turnBackTime = new TurnBackTime();
+                    }
                 }
-                return;
+                while (Selection != "q");
+                {
+                    return;
+                }
             }
         }
     }
