@@ -51,6 +51,7 @@ x64/
 
 # OS generated files #
 .DS_Store*
+*.DS_Store
 Icon?
 
 # Visual C++ cache files
