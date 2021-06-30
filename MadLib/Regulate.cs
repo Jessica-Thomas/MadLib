@@ -24,7 +24,7 @@ namespace MadLib
             for (int i = 0; i < Words.Length; i++)
             {
                 Console.WriteLine("Please give me " + partsOfSpeech[i]);
-                Words[i] = Console.ReadLine();
+                Words[i] = Console.ReadLine().ToUpper();
             }
 
             string madLibRegulators = Words[0] + " , mount up... \n " +

@@ -29,6 +29,10 @@ namespace MadLib
                     {
                         TurnBackTime turnBackTime = new TurnBackTime();
                     }
+                    else if (Selection == "q")
+                    {
+                        break;
+                    }
                 }
                 while (Selection != "q");
                 {
