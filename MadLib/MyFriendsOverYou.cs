@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 
 namespace MadLib
 {
@@ -6,23 +8,20 @@ namespace MadLib
     {
         public MadLibMFOY()
         {
+            //List for holding the parts of speech we need
+            List<string> partsOfSpeech = new List<string>();
+            partsOfSpeech.Add("a body part:  ");
+            partsOfSpeech.Add("a plural noun:  ");
+            partsOfSpeech.Add("a verb:  ");
+            partsOfSpeech.Add("another verb:  ");
 
-            //array for holding the parts of speech we need
-            string[] PartsOfSpeech =
-           {
-                "a body part:  ",
-                "a plural noun:  ",
-                "a verb:  ",
-                "another verb:  "
-                };
-
-            //array for holdind user input
+            //Array for holding user input
             string[] Words = { "", "", "", "" };
 
-            //loop to iterate through each part of speech, take the user input and add it to a list
+            //Loop to iterate through each part of speech, take the user input and add it to a list
             for (int i = 0; i < Words.Length; i++)
             {
-                Console.WriteLine("Please give me " + PartsOfSpeech[i]);
+                Console.WriteLine("Please give me " + partsOfSpeech[i]);
                 Words[i] = Console.ReadLine();
             }
 

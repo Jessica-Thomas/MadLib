@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 
 namespace MadLib
 {
@@ -6,28 +8,22 @@ namespace MadLib
     {
         public Regulate()
         {
-        }
+            //List for holding the parts of speech we need
+            List<string> partsOfSpeech = new List<string>();
+            partsOfSpeech.Add("a plural noun:  ");
+            partsOfSpeech.Add("a color:  ");
+            partsOfSpeech.Add("another color:  ");
+            partsOfSpeech.Add("a noun:  ");
+            partsOfSpeech.Add("a time of day:  ");
+            partsOfSpeech.Add("a place:  ");
 
-        public Regulate(string lyrics)
-        {
-            //array for holding the parts of speech we need
-            string[] PartsOfSpeech =
-            {
-                "a plural noun:  ",
-                "a color:  ",
-                "another color:  ",
-                "a noun:  ",
-                "a time of day:  ",
-                "a place:  "
-            };
-
-            //array for holding user input
+            //Array for holding user input
             string[] Words = { "", "", "", "", "", "" };
 
-            //loop to iterate through each part of speech, take the user input and add it to a list
+            //Loop to iterate through each part of speech, take the user input and add it to an array
             for (int i = 0; i < Words.Length; i++)
             {
-                Console.WriteLine("Please give me " + PartsOfSpeech[i]);
+                Console.WriteLine("Please give me " + partsOfSpeech[i]);
                 Words[i] = Console.ReadLine();
             }
 
