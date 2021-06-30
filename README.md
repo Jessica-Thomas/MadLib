@@ -15,7 +15,7 @@ This is console based mad lib app that takes user input and outputs [hopefully] 
 # Featured Requirements -- DOUBLE CHECK WHAT YOU'VE MET BEFORE SUBMITTING
 - Implement a “master loop” console application where the user can repeatedly enter commands/perform actions, including choosing to exit the program
 - Create a dictionary or list, populate it with several values, retrieve at least one value, and
-use it in your program
+use it in your program-- array created for prompting user input and array created to hold user input
 - Implement a log that records errors, invalid inputs, or other important events and writes
 them to a text file
 - Create 3 or more unit tests for your application

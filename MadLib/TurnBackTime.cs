@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace MadLib
 {
     public class TurnBackTime
@@ -18,7 +19,7 @@ namespace MadLib
             };
 
             //array for holding user input
-            string[] Words =  {  "", "",  "",  "", "", "" };
+            string[] Words = { "", "", "", "", "", "" };
 
             //loop to iterate through each part of speech, take the user input and add it to a list
             for (int i = 0; i < Words.Length; i++)
@@ -37,15 +38,18 @@ namespace MadLib
                                               "I didn't really mean to " + Words[4] + " you \n" +
                                               "I didn't wanna see you go \n" +
                                               "I know I made you cry, but baby \n" +
-                                              "If I could turn back time, if I could find a way \n" +
+                                              "If I could  " + Words[0] + "  back time, if I could find a way \n" +
                                               "I'd take back those " + Words[5] + " that've hurt you, you'd stay \n" +
                                               "If I could reach the stars, I'd give 'em all to you \n" +
                                               "Then you'd love me, love me, like you used to do \n" +
-                                              "If I could turn back time \n";
+                                              "If I could  " + Words[0] + "  back time \n";
 
 
             Console.WriteLine(timeMadLib);
+        }
 
+        public static void RealLyricsTBT()
+        {
             string turnBackTime = "Here are the real lyrics--If I Could Turn Back Time by Cher: \n" +
                                                   "If I could turn back time \n" +
                                                   "If I could find a way \n" +

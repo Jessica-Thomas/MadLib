@@ -4,8 +4,11 @@ namespace MadLib
 {
     public class Regulate
     {
-
         public Regulate()
+        {
+        }
+
+        public Regulate(string lyrics)
         {
             //array for holding the parts of speech we need
             string[] PartsOfSpeech =
@@ -37,7 +40,10 @@ namespace MadLib
                                             "On a mission trying to find Mr.Warren G.  \n";
 
             Console.WriteLine(madLibRegulators);
+        }
 
+        public static void RealLyricsRegulate()
+            {
             string regulators = "Here are the real lyrics-- Regulate by Nate Dogg and Warren G \n" +
                                             "Regulators, mount up... \n " +
                                             "It was a clear black night, a clear white moon. \n" +
@@ -48,7 +54,6 @@ namespace MadLib
                                             "On a mission trying to find Mr.Warren G.  \n";
 
             Console.WriteLine(regulators);
-
         }
     }
 }

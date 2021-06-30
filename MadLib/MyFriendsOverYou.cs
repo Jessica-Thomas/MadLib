@@ -2,10 +2,9 @@
 
 namespace MadLib
 {
-    public class MyFriendsOverYou
+    public class MadLibMFOY
     {
-
-        public MyFriendsOverYou()
+        public MadLibMFOY()
         {
 
             //array for holding the parts of speech we need
@@ -29,7 +28,7 @@ namespace MadLib
 
             string myFriendsMadLib = "You were everything I wanted \n" +
                                                         "But I, just can't finish what I've started \n" +
-                                                        "There's no room left here on my " + Words[0] +" \n" +
+                                                        "There's no room left here on my " + Words[0] + " \n" +
                                                         "It was damaged long ago \n" +
                                                         "Though you swear that you are true \n" +
                                                         "I still pick my  " + Words[1] + "   over you \n" +
@@ -56,7 +55,11 @@ namespace MadLib
                                                         "(My " + Words[1] + " over you) \n";
 
             Console.WriteLine(myFriendsMadLib);
+        }
 
+
+        public static void RealLyricsMFOY()
+        {
             string myFriendsOverYou = "Here are the real lyrics-- My Friends Over You by New Found Glory \n" +
                                                         "You were everything I wanted \n" +
                                                         "But I, just can't finish what I've started \n" +
