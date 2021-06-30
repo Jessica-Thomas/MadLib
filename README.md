@@ -1,13 +1,15 @@
 # MadLib -- DOUBLE CHECK WHAT YOU'VE MET BEFORE SUBMITTING
 This is console based mad lib app that takes user input and outputs [hopefully] funny song lyrics. There are excerpts of three songs built in. User input is stored in an array, then inserted into the song via concatenation and indexing. Once finished, you’ll have the option to see the original song lyrics. A master loop lets you try another mad lib or exit. A log will create an external .txt file to track errors and invalid inputs.
 
+To execute the program, clone the repo to your machine. Using the terminal/shell of your choice, navigate to the project directory and executte the command "dotnet run". You will then be prompted to make a selection and complete a mad lib or exit.
+
 # Base Requirements
 - A minimum of 5 git commits 
 - Project includes a README file that explains the following:
-        ○ A one paragraph or longer description of what your project is about
-        ○ Which 3+ features you have included from the below list to meet the
+        - A one paragraph or longer description of what your project is about
+        - Which 3+ features you have included from the below list to meet the
         requirements
-        ○ Any special instructions required for the reviewer to run your project
+        - Any special instructions required for the reviewer to run your project
 - Create at least one class, then create at least one object of that class and populate it with data. You must use or display the data in your application
 - Create and call at least 3 functions or methods, at least one of which must return a value that is used in your application
 
