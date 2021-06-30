@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/MadLib.csproj": {}
+    "/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/RegulateTest/RegulateTest.csproj": {}
   },
   "projects": {
-    "/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/MadLib.csproj": {
+    "/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/RegulateTest/RegulateTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/MadLib.csproj",
-        "projectName": "MadLib",
-        "projectPath": "/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/MadLib.csproj",
+        "projectUniqueName": "/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/RegulateTest/RegulateTest.csproj",
+        "projectName": "RegulateTest",
+        "projectPath": "/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/RegulateTest/RegulateTest.csproj",
         "packagesPath": "/Users/jessicathomas/.nuget/packages/",
-        "outputPath": "/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/obj/",
+        "outputPath": "/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/RegulateTest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jessicathomas/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -35,12 +35,24 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
             "xunit": {
               "target": "Package",
-              "version": "[2.4.1, )"
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
             }
           },
           "imports": [

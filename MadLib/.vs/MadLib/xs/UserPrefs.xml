@@ -1,16 +1,20 @@
 ﻿<Properties StartupConfiguration="{25295760-643B-435E-90B8-6BA6B99D760E}|Default">
   <MonoDevelop.Ide.ItemProperties.MadLib PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Regulate.cs">
     <Files>
-      <File FileName="Program.cs" Line="9" Column="1" />
+      <File FileName="Program.cs" Line="5" Column="13" />
+      <File FileName="MyFriendsOverYou.cs" Line="9" Column="1" />
+      <File FileName="Regulate.cs" Line="19" Column="1" />
+      <File FileName="TurnBackTime.cs" Line="19" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MadLib" expanded="True">
             <Node name="MadLib" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Regulate.cs" selected="True" />
             </Node>
+            <Node name="RegulateTest" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -18,6 +22,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.RegulateTest FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

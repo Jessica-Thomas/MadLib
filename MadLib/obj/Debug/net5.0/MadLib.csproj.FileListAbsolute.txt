@@ -4,7 +4,6 @@
 /Users/jessicathomas/Desktop/Projects/MadLib/MadLib/bin/Debug/net5.0/MadLib.dll
 /Users/jessicathomas/Desktop/Projects/MadLib/MadLib/bin/Debug/net5.0/ref/MadLib.dll
 /Users/jessicathomas/Desktop/Projects/MadLib/MadLib/bin/Debug/net5.0/MadLib.pdb
-/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/obj/Debug/net5.0/MadLib.csprojAssemblyReference.cache
 /Users/jessicathomas/Desktop/Projects/MadLib/MadLib/obj/Debug/net5.0/MadLib.GeneratedMSBuildEditorConfig.editorconfig
 /Users/jessicathomas/Desktop/Projects/MadLib/MadLib/obj/Debug/net5.0/MadLib.AssemblyInfoInputs.cache
 /Users/jessicathomas/Desktop/Projects/MadLib/MadLib/obj/Debug/net5.0/MadLib.AssemblyInfo.cs
@@ -13,3 +12,9 @@
 /Users/jessicathomas/Desktop/Projects/MadLib/MadLib/obj/Debug/net5.0/ref/MadLib.dll
 /Users/jessicathomas/Desktop/Projects/MadLib/MadLib/obj/Debug/net5.0/MadLib.pdb
 /Users/jessicathomas/Desktop/Projects/MadLib/MadLib/obj/Debug/net5.0/MadLib.genruntimeconfig.cache
+/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/bin/Debug/net5.0/xunit.abstractions.dll
+/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/bin/Debug/net5.0/xunit.assert.dll
+/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/bin/Debug/net5.0/xunit.core.dll
+/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/bin/Debug/net5.0/xunit.execution.dotnet.dll
+/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/obj/Debug/net5.0/MadLib.csproj.AssemblyReference.cache
+/Users/jessicathomas/Desktop/Projects/MadLib/MadLib/obj/Debug/net5.0/MadLib.csproj.CopyComplete
