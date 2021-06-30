@@ -54,11 +54,10 @@ namespace MadLib
                                                         "(My " + Words[1] + " over you) \n";
 
             Console.WriteLine(myFriendsMadLib);
-        }
 
+            Console.WriteLine("Would you like to see the real lyics?  Y or N:  ");
+            string realLyrics = Console.ReadLine().ToLower();
 
-        public static void RealLyricsMFOY()
-        {
             string myFriendsOverYou = "Here are the real lyrics-- My Friends Over You by New Found Glory \n" +
                                                         "You were everything I wanted \n" +
                                                         "But I, just can't finish what I've started \n" +
@@ -88,7 +87,16 @@ namespace MadLib
                                                         "I still pick my friends over you \n" +
                                                         "(My friends over you) \n";
 
-            Console.WriteLine(myFriendsOverYou);
+
+            if (realLyrics is "y" or "yes")
+            {
+                Console.WriteLine(myFriendsOverYou);
+            }
+            else
+            {
+                return;
+            }
+
         }
     }
 }

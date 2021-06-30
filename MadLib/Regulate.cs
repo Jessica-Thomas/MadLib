@@ -36,10 +36,11 @@ namespace MadLib
                                             "On a mission trying to find Mr.Warren G.  \n";
 
             Console.WriteLine(madLibRegulators);
-        }
 
-        public static void RealLyricsRegulate()
-            {
+            Console.WriteLine("Would you like to see the real lyics?  Y or N:  ");
+            string realLyrics = Console.ReadLine().ToLower();
+
+
             string regulators = "Here are the real lyrics-- Regulate by Nate Dogg and Warren G \n" +
                                             "Regulators, mount up... \n " +
                                             "It was a clear black night, a clear white moon. \n" +
@@ -49,7 +50,15 @@ namespace MadLib
                                             "Just hit the Eastside of the  LBC  \n" +
                                             "On a mission trying to find Mr.Warren G.  \n";
 
-            Console.WriteLine(regulators);
+
+            if (realLyrics is "y" or "yes")
+            {
+                Console.WriteLine(regulators);
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }

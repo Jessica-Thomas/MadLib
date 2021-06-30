@@ -43,12 +43,11 @@ namespace MadLib
                                               "Then you'd love me, love me, like you used to do \n" +
                                               "If I could  " + Words[0] + "  back time \n";
 
-
             Console.WriteLine(timeMadLib);
-        }
 
-        public static void RealLyricsTBT()
-        {
+            Console.WriteLine("Would you like to see the real lyics?  Y or N:  ");
+            string realLyrics = Console.ReadLine().ToLower();
+
             string turnBackTime = "Here are the real lyrics--If I Could Turn Back Time by Cher: \n" +
                                                   "If I could turn back time \n" +
                                                   "If I could find a way \n" +
@@ -67,7 +66,14 @@ namespace MadLib
                                                   "If I could turn back time \n";
 
 
+            if (realLyrics is "y" or "yes")
+            {
             Console.WriteLine(turnBackTime);
+            }
+            else
+            {
+                return;
+            }
 
         }
     }
