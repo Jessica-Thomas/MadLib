@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 
-
 namespace MadLib
 {
     public class TurnBackTime
     {
         public TurnBackTime()
         {
+            //Regex to ensure user input is alpha and at least 2 characters
+            string letters = @"\b[a - zA - Z]{2,}\b";
+
             //List for holding the parts of speech we need
             List<string> partsOfSpeech = new List<string>();
             partsOfSpeech.Add("a verb:  ");
@@ -17,14 +19,20 @@ namespace MadLib
             partsOfSpeech.Add("another verb:  ");
             partsOfSpeech.Add("a plural noun:  ");
 
-            //Array for holding user input
-            string[] Words = { "", "", "", "", "", "" };
+            //Initialize empty array for holding user input
+            string[] Words = new string[6];
 
             //Loop to iterate through each part of speech, take the user input and add it to a list
             for (int i = 0; i < Words.Length; i++)
             {
                 Console.WriteLine("Please give me " + partsOfSpeech[i]);
                 Words[i] = Console.ReadLine().ToUpper();
+                if (Words[i] != letters)
+                {
+                    Console.WriteLine("Invalid input. Please try again.");
+                    Console.WriteLine("Please give me " + partsOfSpeech[i]);
+                    Words[i] = Console.ReadLine().ToUpper();
+                }
             }
 
             string timeMadLib = "If I could " + Words[0] + " back time \n" +
