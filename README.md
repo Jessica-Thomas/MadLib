@@ -16,4 +16,4 @@ To execute the program, clone the repo to your machine. Using the terminal/shell
 # Featured Requirements
 - Implement a “master loop” console application where the user can repeatedly enter commands/perform actions, including choosing to exit the program
 - Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program
-- Implement a regular expression (regex) to ensure a field either a phone number or an email address is always stored and displayed in the same format
+- Implement a regular expression (regex) to ensure a field is always stored and displayed in the same format
