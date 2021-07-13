@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace MadLib
 {
@@ -8,7 +9,7 @@ namespace MadLib
         public MyFriendsOverYou()
         {
             //Regex to ensure user input is alpha and at least 2 characters
-            string validPattern = "^[a - zA - Z]{2,}";
+            Regex pattern = new("[a - zA - Z]{2,}");
 
             //List for holding the parts of speech we need
             //Adding in the parts of speech needed for this mad lib
@@ -26,19 +27,19 @@ namespace MadLib
             {
                 Console.WriteLine("Please give me " + partsOfSpeech[i]);
                 Words[i] = Console.ReadLine().ToUpper();
-                if (Words[i] == "" || Words[i] != validPattern)
+
+                if (!pattern.IsMatch(Words[i]))
                 {
                     Console.WriteLine("Invalid input. Please try again.");
                     Console.WriteLine("Please give me " + partsOfSpeech[i]);
                     Words[i] = Console.ReadLine().ToUpper();
                 }
-
                 else
                 {
                     continue;
                 }
-            }
 
+            }
 
             string myFriendsMadLib = "You were everything I wanted \n" +
                                     "But I, just can't finish what I've started \n" +
@@ -69,6 +70,9 @@ namespace MadLib
                                     "(My " + Words[1] + " over you) \n";
 
             Console.WriteLine(myFriendsMadLib);
+
+
+
 
             Console.WriteLine("Would you like to see the real lyics?  Y or N:  ");
             string realLyrics = Console.ReadLine().ToLower();
@@ -102,7 +106,7 @@ namespace MadLib
                                     "I still pick my friends over you \n" +
                                     "(My friends over you) \n";
 
-
+            
             if (realLyrics is "y" or "yes")
             {
                 Console.WriteLine(myFriendsOverYou);
