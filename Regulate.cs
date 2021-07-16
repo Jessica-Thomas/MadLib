@@ -10,7 +10,7 @@ namespace MadLib
 
             //List for holding the parts of speech we need
             //Adding in the parts of speech needed for this mad lib
-            List<string> partsOfSpeech = new List<string>();
+            List<string> partsOfSpeech = new();
             partsOfSpeech.Add("a plural noun:  ");
             partsOfSpeech.Add("a color:  ");
             partsOfSpeech.Add("another color:  ");

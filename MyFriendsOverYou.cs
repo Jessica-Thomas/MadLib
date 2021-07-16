@@ -8,12 +8,11 @@ namespace MadLib
     {
         public MyFriendsOverYou()
         {
-            //Regex to ensure user input is alpha and at least 2 characters
-            Regex pattern = new("[a - zA - Z]{2,}");
+
 
             //List for holding the parts of speech we need
             //Adding in the parts of speech needed for this mad lib
-            List<string> partsOfSpeech = new List<string>();
+            List<string> partsOfSpeech = new();
             partsOfSpeech.Add("a body part:  ");
             partsOfSpeech.Add("a plural noun:  ");
             partsOfSpeech.Add("a verb:  ");
@@ -22,19 +21,19 @@ namespace MadLib
             //Initialize empty array for holding user input
             string[] Words = new string[4];
 
-            //Loop to iterate through each part of speech, take the user input and add it to a list
+
+            //Loop to iterate through each part of speech, take the user input and add it to an array for later use
             for (int i = 0; i < Words.Length; i++)
             {
-                Console.WriteLine("Please give me " + partsOfSpeech[i]);
-                Words[i] = Console.ReadLine().ToUpper();
+
+                GetInput(partsOfSpeech) = new Input();
 
                 if (!pattern.IsMatch(Words[i]))
                 {
-                    Console.WriteLine("Invalid input. Please try again.");
-                    Console.WriteLine("Please give me " + partsOfSpeech[i]);
-                    Words[i] = Console.ReadLine().ToUpper();
+                    InvalidInput();
                 }
-                else
+
+                if (pattern.IsMatch(Words[i]))
                 {
                     continue;
                 }
@@ -73,11 +72,7 @@ namespace MadLib
 
 
 
-
-            Console.WriteLine("Would you like to see the real lyics?  Y or N:  ");
-            string realLyrics = Console.ReadLine().ToLower();
-
-            string myFriendsOverYou = "Here are the real lyrics-- My Friends Over You by New Found Glory \n" +
+            string actualSong = "Here are the real lyrics-- My Friends Over You by New Found Glory \n" +
                                     "You were everything I wanted \n" +
                                     "But I, just can't finish what I've started \n" +
                                     "There's no room left here on my back \n" +
@@ -106,16 +101,8 @@ namespace MadLib
                                     "I still pick my friends over you \n" +
                                     "(My friends over you) \n";
 
-            
-            if (realLyrics is "y" or "yes")
-            {
-                Console.WriteLine(myFriendsOverYou);
-            }
-            else
-            {
-                return;
-            }
 
         }
+
     }
 }

@@ -20,19 +20,19 @@ namespace MadLib
 
                 if (Selection == "1")
                 {
-                    MyFriendsOverYou myFriendsOverYou = new MyFriendsOverYou();
+                    MyFriendsOverYou myFriendsOverYou = new();
                 }
                 else if (Selection == "2")
                 {
-                    Regulate regulate = new Regulate();
+                    Regulate regulate = new();
                 }
                 else if (Selection == "3")
                 {
-                    TurnBackTime turnBackTime = new TurnBackTime();
+                    TurnBackTime turnBackTime = new();
                 }
                 else if (Selection == "q")
                 {
-                    Console.WriteLine("Peace out.");
+                    Console.WriteLine("Hope you had fun. Peace out.");
                     break;
                 }
             }
