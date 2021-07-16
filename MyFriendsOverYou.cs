@@ -9,7 +9,6 @@ namespace MadLib
         public MyFriendsOverYou()
         {
 
-
             //List for holding the parts of speech we need
             //Adding in the parts of speech needed for this mad lib
             List<string> partsOfSpeech = new();

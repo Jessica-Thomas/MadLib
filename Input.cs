@@ -7,14 +7,14 @@ namespace MadLib
     public class Input
     {
         //Regex to ensure user input is alpha and at least 2 characters
-        Regex pattern = new(pattern: @"(?i)[a-z]{2,}");
+        readonly Regex pattern = new(pattern: @"(?i)[a-z]{2,}");
 
         //Ask for user input-- pull from part of speech list, add response to same index in an array
-        static void GetInput(List<string> partsOfSpeech, string[] Words)
-            {
-                Console.WriteLine("Please give me " + partsOfSpeech[i]);
-                Words[i] = Console.ReadLine().ToUpper();
-            }
+        static void GetInput(List<string> partsOfSpeech, string[] Words, int i)
+        {
+            Console.WriteLine("Please give me " + partsOfSpeech[i]);
+            Words[i] = Console.ReadLine().ToUpper();
+        }
 
         //When input is invalid, let user know and repeat request for part of speech
         static void InvalidInput(List<string> partsOfSpeech, string[] Words, int i)
