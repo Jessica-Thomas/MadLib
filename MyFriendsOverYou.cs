@@ -21,13 +21,16 @@ namespace MadLib
             string[] Words = new string[4];
 
 
-            //Loop to iterate through each part of speech, take the user input and add it to an array for later use
+            //Loop to iterate through each part of speech, take the user input and add it to an array for later use, while checking to make sure the input is valid-- keep looping until valid input recieved
             for (int i = 0; i < Words.Length; i++)
             {
 
-                GetInput(partsOfSpeech) = new Input();
+                GetInput input = new Input(Words[i]);
 
-                if (!pattern.IsMatch(Words[i]))
+                if (Input.pattern.IsMatch(Words[i]))
+                {
+                }
+                else
                 {
                     InvalidInput();
                 }
