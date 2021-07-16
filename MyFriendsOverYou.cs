@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text.RegularExpressions;
 
 namespace MadLib
 {
@@ -20,22 +19,11 @@ namespace MadLib
             //Initialize empty array for holding user input
             string[] Words = new string[4];
 
-
-            //Loop to iterate through each part of speech, take the user input and add it to an array for later use
+            //Loop to iterate through each part of speech, take the user input and add it to an array
             for (int i = 0; i < Words.Length; i++)
             {
-
-                GetInput(partsOfSpeech) = new Input();
-
-                if (!pattern.IsMatch(Words[i]))
-                {
-                    InvalidInput();
-                }
-
-                if (pattern.IsMatch(Words[i]))
-                {
-                    continue;
-                }
+                Console.WriteLine("Please give me " + partsOfSpeech[i]);
+                Words[i] = Console.ReadLine().ToUpper();
 
             }
 
@@ -71,7 +59,7 @@ namespace MadLib
 
 
 
-            string actualSong = "Here are the real lyrics-- My Friends Over You by New Found Glory \n" +
+            string mfoyLyrics = "Here are the real lyrics-- My Friends Over You by New Found Glory \n" +
                                     "You were everything I wanted \n" +
                                     "But I, just can't finish what I've started \n" +
                                     "There's no room left here on my back \n" +
@@ -100,7 +88,18 @@ namespace MadLib
                                     "I still pick my friends over you \n" +
                                     "(My friends over you) \n";
 
+            Console.WriteLine("Would you like to see the real lyics?  Y or N:  ");
+            string realLyrics = Console.ReadLine().ToLower();
 
+
+            if (realLyrics is "y" or "yes")
+            {
+                Console.WriteLine(mfoyLyrics);
+            }
+            else
+            {
+                return;
+            }
         }
 
     }
