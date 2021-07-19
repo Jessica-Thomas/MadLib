@@ -10,7 +10,6 @@ namespace MadLib
         {
             //Initialize empty array for holding user input
             string[] Words = new string[6];
-            string userInput;
 
             //List for holding the parts of speech we need
             //Adding in the parts of speech needed for this mad lib
@@ -23,8 +22,7 @@ namespace MadLib
             partsOfSpeech.Add("a place:  ");
 
             //Regex for pattern matching to ensure user input is alpha and at least 2 characters long
-            string pattern = "\b(?i)[a-z]{2}\b";
-            Regex inputValidation = new Regex(pattern);
+            Regex inputValidation = new Regex("\b(?i)[a-z]{2}\b");
 
             //Loop to iterate through each part of speech, take the user input and add it to an array
             for (int i = 0; i < Words.Length; i++)
