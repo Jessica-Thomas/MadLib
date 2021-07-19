@@ -22,7 +22,9 @@ namespace MadLib
             partsOfSpeech.Add("a place:  ");
 
             //Regex for pattern matching to ensure user input is alpha and at least 2 characters long
-            Regex inputValidation = new Regex("\b(?i)[a-z]{2}\b");
+            RegexOptions options = RegexOptions.IgnoreCase;
+            Regex inputValidation = new Regex("[a-z]+", options);
+
 
             //Loop to iterate through each part of speech, take the user input and add it to an array
             for (int i = 0; i < Words.Length; i++)
@@ -30,8 +32,8 @@ namespace MadLib
                 Console.WriteLine("Please give me " + partsOfSpeech[i]);
                 Words[i] = Console.ReadLine().ToUpper();
 
-                //Uses regex to be sure we're getting a valid input before moving to the next prompt
-                if (!inputValidation.IsMatch(Words[i]))
+                //Uses regex to be sure we're getting a valid input before moving to the next prompt-- if input does not match pattern, continues to ask until we get a part of speech that matches
+                while (!inputValidation.IsMatch(Words[i]))
                 {
                     Console.WriteLine("Invalid input. Please try again. Give me " + partsOfSpeech[i]);
                     Words[i] = Console.ReadLine().ToUpper();

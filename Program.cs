@@ -19,15 +19,15 @@ namespace MadLib
 
                 if (Selection == "1")
                 {
-                    MyFriendsOverYou myFriendsOverYou = new();
+                    MyFriendsOverYou myFriendsOverYou = new MyFriendsOverYou();
                 }
                 else if (Selection == "2")
                 {
-                    Regulate regulate = new();
+                    Regulate regulate = new Regulate();
                 }
                 else if (Selection == "3")
                 {
-                    TurnBackTime turnBackTime = new();
+                    TurnBackTime turnBackTime = new TurnBackTime();
                 }
                 else if (Selection == "q")
                 {
