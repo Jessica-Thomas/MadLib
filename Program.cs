@@ -5,6 +5,8 @@ namespace MadLib
 {
     class Program
     {
+        private static readonly object Regulate;
+
         static void Main(string[] args)
         {
 
@@ -20,15 +22,15 @@ namespace MadLib
 
                 if (Selection == "1")
                 {
-                    MyFriendsOverYou myFriendsOverYou = new();
+                    
                 }
                 else if (Selection == "2")
                 {
-                    Regulate regulate = new();
+                    
                 }
                 else if (Selection == "3")
                 {
-                    TurnBackTime turnBackTime = new();
+                    
                 }
                 else if (Selection == "q")
                 {

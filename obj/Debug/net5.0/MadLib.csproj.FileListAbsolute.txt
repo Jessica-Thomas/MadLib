@@ -1,0 +1,5 @@
+/Users/jessicathomas/Desktop/MadLib-refactor/obj/Debug/net5.0/MadLib.csproj.AssemblyReference.cache
+/Users/jessicathomas/Desktop/MadLib-refactor/obj/Debug/net5.0/MadLib.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jessicathomas/Desktop/MadLib-refactor/obj/Debug/net5.0/MadLib.AssemblyInfoInputs.cache
+/Users/jessicathomas/Desktop/MadLib-refactor/obj/Debug/net5.0/MadLib.AssemblyInfo.cs
+/Users/jessicathomas/Desktop/MadLib-refactor/obj/Debug/net5.0/MadLib.csproj.CoreCompileInputs.cache
