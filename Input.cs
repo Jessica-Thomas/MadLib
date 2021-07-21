@@ -4,63 +4,61 @@ using System.Text.RegularExpressions;
 
 namespace MadLib
 {
-    public class Input 
+    public class Input
     {
-        //Ask for user input-- pull from part of speech list, add response to same index in an array
-        public static void GetInput(List<string> partsOfSpeech, string[] Words, int i)
+
+        internal class GetInput
         {
-            //Regex for pattern matching to ensure user input is alpha and at least 2 characters long
-            RegexOptions options = RegexOptions.IgnoreCase;
-            Regex inputValidation = new Regex("[a-z]+", options);
-
-            //Loop to iterate through each part of speech, take the user input and add it to an array
-            for (int i = 0; i < Words.Length; i++)
+            public static void Input(List<string> partsOfSpeech, string[] Words)
             {
-                Console.WriteLine("Please give me " + partsOfSpeech[i]);
-                Words[i] = Console.ReadLine().ToUpper();
+                //Regex for pattern matching to ensure user input is alpha and at least 2 characters long
+                RegexOptions options = RegexOptions.IgnoreCase;
+                Regex inputValidation = new Regex("[a-z]{2,}", options);
 
-                //Uses regex to be sure we're getting a valid input before moving to the next prompt-- if input does not match pattern, continues to ask until we get a part of speech that matches
-                while (!inputValidation.IsMatch(Words[i]))
+                //Loop to iterate through each part of speech, take the user input and add it to an array
+                for (int i = 0; i < Words.Length; i++)
                 {
-                    Console.WriteLine("Invalid input. Please try again. Give me " + partsOfSpeech[i]);
+                    Console.WriteLine("Please give me " + partsOfSpeech[i]);
                     Words[i] = Console.ReadLine().ToUpper();
+
+                    //Uses regex to be sure we're getting a valid input before moving to the next prompt-- if input does not match pattern, continues to ask until we get a part of speech that matches
+                    while (!inputValidation.IsMatch(Words[i]))
+                    {
+                        Console.WriteLine("Invalid input. Please try again. Give me " + partsOfSpeech[i]);
+                        Words[i] = Console.ReadLine().ToUpper();
+                    }
                 }
-
-                Console.WriteLine(Songs.MyFriendsOverYou());
             }
+
         }
 
-
-        //Writes real lyrics to the console if user inputs y
-        public static void RealLyrics() 
+        internal class DisplayMadLib
         {
-            Console.WriteLine("Would you like to see the real lyics?  Y or N:  ");
-            string displayRealLyrics = Console.ReadLine().ToLower();
-            string realLyrics;
-
-            if (displayRealLyrics is "y" or "yes")
+            //Ask for user input-- pull from part of speech list, add response to same index in an array
+            public static void ShowMadLib(string madLib)
             {
-                Console.WriteLine();
+
+                Console.WriteLine(madLib);
             }
-            else
+        }
+
+        internal class DisplayRealLyrics
+        {
+            //Writes real lyrics to the console if user inputs y
+            public static void ShowRealLyrics(string realLyrics)
             {
-                return;
+                Console.WriteLine("Would you like to see the real lyics?  Y or N:  ");
+                string displayRealLyrics = Console.ReadLine().ToLower();
+
+                if (displayRealLyrics is "y" or "yes")
+                {
+                    Console.WriteLine(realLyrics);
+                }
+                else
+                {
+                    return;
+                }
             }
-
-        
         }
-
-        internal static void RealLyrics()
-        {
-            throw new NotImplementedException();
-        }
-
-        internal static void GetInput()
-        {
-            throw new NotImplementedException();
-        }
-
     }
 }
-
-    

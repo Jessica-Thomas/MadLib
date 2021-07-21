@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Songs.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="xunit" />
     <None Remove="NUnit" />
   </ItemGroup>
