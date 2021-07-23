@@ -115,7 +115,7 @@ namespace MadLib
                 Console.WriteLine(madLib);
             }
 
-
+        //Method for gathering user input, comparing 
         public static void GatherWords(List<string> partsOfSpeech, string[] Words)
         {
             //Regex for pattern matching to ensure user input is alpha and at least 2 characters long
