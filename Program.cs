@@ -19,15 +19,20 @@ namespace MadLib
 
                 if (Selection == "1")
                 {
-                    MyFriendsOverYou myFriendsOverYou = new();
+
+                    //Songs.MyFriendsOverYou();
+                    //MyFriendsOverYou myFriendsOverYou = new();
+                    
                 }
                 else if (Selection == "2")
                 {
-                    Regulate regulate = new();
+                    Songs.Regulate();
+                    //Regulate regulate = new();
                 }
                 else if (Selection == "3")
                 {
-                    TurnBackTime turnBackTime = new();
+                    Songs.TurnBackTime();
+                    //TurnBackTime turnBackTime = new();
                 }
                 else if (Selection == "q")
                 {

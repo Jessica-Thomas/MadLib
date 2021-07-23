@@ -4,12 +4,41 @@ using System.Text.RegularExpressions;
 
 namespace MadLib
 {
-    public class Input
+    public class Input : Songs
     {
+        public class DisplayMadLib
+        {
+            //Ask for user input-- pull from part of speech list, add response to same index in an array
+            public static void ShowMadLib(string madLib)
+            {
+
+                Console.WriteLine(madLib);
+            }
+        }
+
+        public class DisplayRealLyrics
+        {
+            //Writes real lyrics to the console if user inputs y
+            public static void ShowRealLyrics(string realLyrics)
+            {
+
+                Console.WriteLine("Would you like to see the real lyics?  Y or N:  ");
+                string displayRealLyrics = Console.ReadLine().ToLower();
+
+                if (displayRealLyrics is "y" or "yes")
+                {
+                    Console.WriteLine(realLyrics);
+                }
+                else
+                {
+                    return;
+                }
+            }
+        }
 
         internal class GetInput
         {
-            public static void Input(List<string> partsOfSpeech, string[] Words)
+            public static void GatherWords(List<string> partsOfSpeech, string[] Words)
             {
                 //Regex for pattern matching to ensure user input is alpha and at least 2 characters long
                 RegexOptions options = RegexOptions.IgnoreCase;
@@ -27,36 +56,6 @@ namespace MadLib
                         Console.WriteLine("Invalid input. Please try again. Give me " + partsOfSpeech[i]);
                         Words[i] = Console.ReadLine().ToUpper();
                     }
-                }
-            }
-
-        }
-
-        internal class DisplayMadLib
-        {
-            //Ask for user input-- pull from part of speech list, add response to same index in an array
-            public static void ShowMadLib(string madLib)
-            {
-
-                Console.WriteLine(madLib);
-            }
-        }
-
-        internal class DisplayRealLyrics
-        {
-            //Writes real lyrics to the console if user inputs y
-            public static void ShowRealLyrics(string realLyrics)
-            {
-                Console.WriteLine("Would you like to see the real lyics?  Y or N:  ");
-                string displayRealLyrics = Console.ReadLine().ToLower();
-
-                if (displayRealLyrics is "y" or "yes")
-                {
-                    Console.WriteLine(realLyrics);
-                }
-                else
-                {
-                    return;
                 }
             }
         }

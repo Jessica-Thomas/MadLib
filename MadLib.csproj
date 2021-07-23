@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Songs.cs" />
+    <Compile Remove="MyFriendsOverYou.cs" />
+    <Compile Remove="Regulate.cs" />
+    <Compile Remove="TurnBackTime.cs" />
   </ItemGroup>
 
   <ItemGroup>
