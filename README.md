@@ -1,7 +1,7 @@
 # MadLib
 This is console based mad lib app that takes user input and outputs [hopefully] funny song lyrics. There are excerpts of three songs built in. User input is checked by a regex to ensure input is at least 2 alpha characters, then stored in an array, and lastly inserted into the song via concatenation and indexing. Once finished, you’ll have the option to see the original song lyrics. A master loop lets you try another mad lib or exit. 
 
-To execute the program, clone the repo to your machine. Using the terminal/shell of your choice, navigate to the project directory and executte the command "dotnet run". You will then be prompted to make a selection and complete a mad lib or exit.
+To execute the program, clone the repo to your machine. There are two ways to execute the program-- 1) open the project in Visual Studio and run with the debugger, or 2) using the terminal/shell of your choice, navigate to the project directory and execute the command "dotnet run". You will then be prompted to make a selection and complete a mad lib or exit.
 
 # Base Requirements
 - A minimum of 5 git commits 
