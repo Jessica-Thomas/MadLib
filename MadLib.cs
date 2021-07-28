@@ -11,20 +11,16 @@ namespace MadLib
             GenerateMadLib();
          }
 
-        //Variables for looping 
+        //Variables 
         string Selection;
         string Quit = "To exit the program, press Q.";
         string Choices = "To proceed with a mad lib, make a selection... 1, 2, or 3 ? ";
         string LineBreak = "\n------------------------------------------------\n";
 
 
-        //Ask for user input-- pull from part of speech list, add response to same index in an array
-        public void ShowMadLib(string madLib)
-        {
-            Console.WriteLine(madLib);
-        }
 
-        //Method for gathering user input, comparing 
+        //Ask for user input-- pull from part of speech list, add response to same index in an array
+        //Uses regex to make sure input Words are alpha, at least 2 characters 
         public void GatherWords(List<string> partsOfSpeech, string[] Words)
         {
             //Regex for pattern matching to ensure user input is alpha and at least 2 characters long
@@ -44,6 +40,12 @@ namespace MadLib
                     Words[i] = Console.ReadLine().ToUpper();
                 }
             }
+        }
+
+        //Writes concatenated Mad Lib to the console
+        public void ShowMadLib(string madLib)
+        {
+            Console.WriteLine(madLib);
         }
 
         //Writes real lyrics to the console if user inputs y
